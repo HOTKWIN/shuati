@@ -172,8 +172,3 @@ l.delete(4)
 print(l.getitem(4))
 
 print(l.index(40))
-
-
-
-
-
