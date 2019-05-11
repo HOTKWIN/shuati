@@ -150,25 +150,26 @@ class LinkList(object):
         else:
             return -i
 
-#test
-l = LinkList()
-l.initlist([1,2,3,4,5])
-print(l.getitem(4))
-l.append(6)
-print(l.getitem(5))
+if __name__ == '__main__':
+    #test
+    l = LinkList()
+    l.initlist([1,2,3,4,5])
+    print(l.getitem(4))
+    l.append(6)
+    print(l.getitem(5))
 
-l.insert(4,40)
-print(l.getitem(3))
-print(l.getitem(4))
-print(l.getitem(5))
+    l.insert(4,40)
+    print(l.getitem(3))
+    print(l.getitem(4))
+    print(l.getitem(5))
 
-l.delete(5)
-print(l.getitem(5))
+    l.delete(5)
+    print(l.getitem(5))
 
-print(l.index(5))
-print(l.index(6))
+    print(l.index(5))
+    print(l.index(6))
 
-l.delete(4)
-print(l.getitem(4))
+    l.delete(4)
+    print(l.getitem(4))
 
-print(l.index(40))
+    print(l.index(40))
