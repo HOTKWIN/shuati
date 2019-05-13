@@ -20,11 +20,6 @@ Explanation: The answer is "wke", with the length of 3.
 
 class Solution:
     def lengthOfLongestSubstring1(self,s):
-        """
-
-        :param s: str
-        :return: int
-        """
         if not s or len(s) == 0:
             return 0
 
@@ -41,11 +36,6 @@ class Solution:
         return res
 
     def lengthOfLongestSubstring2(self,s):
-        """
-
-        :param s:str
-        :return: int
-        """
         start,res,maps,n = 0,0,{},len(s)
         for i in range(n):
             start = max(start,maps.get(s[i],-1)+1)
