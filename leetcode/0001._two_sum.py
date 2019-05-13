@@ -24,7 +24,6 @@ class Solution(object):
             else:
                 lookup[num] = i
 
-
 test = Solution()
 method1 = test.twoSum1([2,7,11,15],9)
 method2 = test.twoSum2([2,7,11,15],9)
