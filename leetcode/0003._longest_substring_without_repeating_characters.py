@@ -61,7 +61,5 @@ class Solution:
             res = max(res,counter)
         return res
 
-
-
 x = Solution()
 print(x.lengthOfLongestSubstring3("pwwkew"))
