@@ -59,6 +59,25 @@ class Solution:
                 l += 1
             res = max(res,r-l)
         return res
+        lookup = collections.defaultdict(int)
+        l,r,counter,res = 0,0,0,0
+        while r<len(s):
+            lookup[s[r]] += 1
+            if lookup[s[r]] == 1:
+                counter += 1
+                print('counter=',counter)
+            r += 1
+            print('r=',r)
+            #counter<r-l means repeat,counter==r-l means no repeat
+            while l<r and counter<r-l:
+                lookup[s[l]] -= 1
+                if lookup[s[l]] == 0:
+                    counter -= 1
+                    print('counter=', counter)
+                l += 1
+                print('l=',l)
+            res = max(res,r-l)
+        return res
 
 
 x = Solution()
